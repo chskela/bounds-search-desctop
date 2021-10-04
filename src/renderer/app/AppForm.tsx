@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { Form, Row, Col } from 'react-bootstrap';
+import { Form, Row, Col, Button } from 'react-bootstrap';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -11,7 +11,11 @@ const AppForm: FC = () => {
   return (
     <Form>
       <Col>
-        <Row className="mb-3">
+        <Row className="mb-4 d-flex justify-content-center align-items-center fs-2">
+          {'Параметры поиска облигаций'}
+        </Row>
+
+        <Row className="mb-3 justify-content-center">
           <Col xs={2}>
             <Form.Group as={Row}>
               <Col xs={8}>
@@ -47,7 +51,8 @@ const AppForm: FC = () => {
             </Form.Group>
           </Col>
         </Row>
-        <Row className="mb-3">
+
+        <Row className="mb-3 justify-content-center">
           <Col xs={2}>
             <Form.Group as={Row}>
               <Col xs={8}>
@@ -83,7 +88,8 @@ const AppForm: FC = () => {
             </Form.Group>
           </Col>
         </Row>
-        <Row className="mb-3">
+
+        <Row className="mb-3 justify-content-center">
           <Col xs={2}>
             <Form.Group as={Row}>
               <Col xs={8}>
@@ -119,7 +125,8 @@ const AppForm: FC = () => {
             </Form.Group>
           </Col>
         </Row>
-        <Row className="mb-3">
+
+        <Row className="mb-3 justify-content-center">
           <Col
             xs={7}
             className="d-flex justify-content-center align-items-center fs-5"
@@ -140,6 +147,18 @@ const AppForm: FC = () => {
               </Col>
             </Form.Group>
           </Col>
+        </Row>
+        <Row>
+          <Col xs={2}></Col>
+          <Col
+            xs={8}
+            className="d-flex justify-content-center align-items-center "
+          >
+            <Button variant="primary" type="submit" size="lg">
+              {'Поиск'}
+            </Button>
+          </Col>
+          <Col xs={2}></Col>
         </Row>
       </Col>
     </Form>
